@@ -3,120 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eugine Okero | Portfolio</title>
+    <title>Eugine Okero | Technical Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
 
-    <header>
-        <div class="logo">Manna Driller<span class="accent-dot">.</span></div>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Core Skills</a></li>
-                <li><a href="#projects">Deployments</a></li>
-                <li><a href="#contact">Contact</a></li>
+    <!-- Navigation Header Matrix -->
+    <header class="header">
+        <div class="logo-container">
+            <span class="logo-text">Manna<span class="highlight">Driller</span></span>
+        </div>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Infrastructure</a></li>
+                <li><a href="#contact" class="nav-link">Gateway</a></li>
             </ul>
         </nav>
-        <button id="theme-toggle" aria-label="Toggle dark/light mode">Toggle Mode</button>
+        <div class="theme-toggle-container">
+            <button id="theme-toggle" class="theme-btn" aria-label="Toggle Interface Theme">
+                <span class="mode-icon">🌙</span>
+            </button>
+        </div>
     </header>
 
-    <section id="home" class="hero-section">
-        <div class="hero-content">
-            <h1>Eugine Okero</h1>
-            <h2>Cybersecurity Specialist & Network Administrator</h2>
-            <p>Architecting secure enterprise networks, managing high-traffic local hotspot infrastructures, and executing defensive labs.</p>
-            <a href="#projects" class="btn">Explore Infrastructure</a>
-        </div>
-    </section>
-
-    <section id="about" class="section">
-        <h2>About Me</h2>
-        <div class="about-container">
-            <p>I am a computer science and network professional specializing in end-to-end infrastructure deployment and security engineering. My background spans building resilient local networking environments, configuring carrier-grade hardware routing configurations, and conducting interactive threat modeling labs to build bulletproof network architecture.</p>
-        </div>
-    </section>
-
-    <section id="skills" class="section bg-alt">
-        <h2>Technical Stack</h2>
-        <div class="skills-grid">
-            <div class="skill-card">
-                <h3>Networking & Infrastructure</h3>
-                <p>MikroTik (WinBox), Huawei Enterprise, GPON Router Architecture, Captive Portals, & Power over Ethernet (PoE) Deployments.</p>
+    <main>
+        <!-- Hero Introduction Core -->
+        <section id="about" class="section hero-section">
+            <div class="hero-content">
+                <h1>Eugine Okero</h1>
+                <p class="subtitle">Computer Science Professional & Cybersecurity Specialist</p>
+                <p class="bio">
+                    Specializing in defensive enterprise network administration, routing optimization, and threat vector modeling. 
+                    I build resilient, secure infrastructure environments and high-performance digital solutions optimized for 
+                    fault tolerance and cryptographic integrity.
+                </p>
+                <div class="cta-container">
+                    <a href="#projects" class="btn btn-primary">Examine Frameworks</a>
+                    <a href="#contact" class="btn btn-secondary">Secure Transmission</a>
+                </div>
             </div>
-            <div class="skill-card">
-                <h3>Cybersecurity Operations</h3>
-                <p>Advanced Penetration Testing, Nmap Network Scanning, Kali Linux Environment Diagnostics, & Threat Vector Analysis.</p>
-            </div>
-            <div class="skill-card">
-                <h3>Automation & Data Systems</h3>
-                <p>Infrastructure as Code (IaC), Automation Pipelines, Quantitative Financial Analysis Models, & Web Engineering (HTML5/CSS3/JS/PHP).</p>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="projects" class="section">
-        <h2>Production Deployments</h2>
-        <div class="projects-grid">
+        <!-- Technical Production Projects -->
+        <section id="projects" class="section">
+            <h2>Production Deployments</h2>
+            <p class="section-subheading">Live operational clusters and advanced architectural testing beds.</p>
             
-            <div class="project-card">
-                <div class="project-tag">FinTech & Trading</div>
-                <div class="project-image-container">
-                    <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=600&q=80" alt="DrillerHub Trading Platform" class="project-img">
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="card-edge"></div>
+                    <h3>DrillerHub Engine</h3>
+                    <p>A unified technical interface engineered for quantitative metrics tracking, system orchestration parameters, and deployment telemetry dashboards.</p>
+                    <div class="tech-tags">
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS Grid</span>
+                        <span class="tag">Vanilla JS</span>
+                    </div>
+                    <a href="https://drillerhub.vercel.app" target="_blank" rel="noopener noreferrer" class="card-link">Establish Connection →</a>
                 </div>
-                <h3>DrillerHub</h3>
-                <p>An advanced broker evaluation and live quantitative asset trading hub. Integrates real-time streaming charts and quantitative data indicators for automated market analysis.</p>
-                <a href="https://drillerhub.vercel.app" target="_blank" rel="noopener noreferrer" class="btn project-link-btn">Launch DrillerHub</a>
-            </div>
 
-            <div class="project-card">
-                <div class="project-tag">CyberSec & Dev</div>
-                <div class="project-image-container">
-                    <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=600&q=80" alt="Manna Driller Launchpad Platform" class="project-img">
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="card-edge"></div>
+                    <h3>Manna Driller Launchpad</h3>
+                    <p>Central provisioning node designed for handling dynamic user routing matrices, automated service logic, and high-traffic gateway simulations.</p>
+                    <div class="tech-tags">
+                        <span class="tag">Web API</span>
+                        <span class="tag">State Persistence</span>
+                        <span class="tag">Secure Routing</span>
+                    </div>
+                    <a href="https://manna-driller-launchpad.vercel.app" target="_blank" rel="noopener noreferrer" class="card-link">Establish Connection →</a>
                 </div>
-                <h3>Manna Driller Launchpad</h3>
-                <p>An interactive, multi-tier learning platform built for foundational cybersecurity frameworks and responsive web development training pathways.</p>
-                <a href="https://manna-driller-launchpad.vercel.app" target="_blank" rel="noopener noreferrer" class="btn project-link-btn">Explore Launchpad</a>
             </div>
+        </section>
 
-            <div class="project-card">
-                <div class="project-tag">Networking</div>
-                <div class="project-image-container">
-                    <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=600&q=80" alt="Hotspot Network Infrastructure" class="project-img">
+        <!-- Infrastructure & Core Skills Matrix -->
+        <section id="skills" class="section bg-alt">
+            <h2>Core Infrastructure & Competencies</h2>
+            <p class="section-subheading">Technical tools, protocols, and architectural disciplines managed across active deployments.</p>
+            
+            <div class="skills-wrapper">
+                <div class="skill-category">
+                    <h3>Network & Security Operations</h3>
+                    <ul class="skill-list">
+                        <li>MikroTik WinBox & Enterprise Routing</li>
+                        <li>Huawei GPON Broadband Infrastructure</li>
+                        <li>Penetration Testing & Defensive Hardening</li>
+                        <li>Threat Vector Access Control Modeling</li>
+                    </ul>
                 </div>
-                <h3>Enterprise Hotspot Architecture</h3>
-                <p>Engineered dynamic traffic management routing scripts using MikroTik WinBox and custom gateway portals to service high-density local hotspot infrastructure zones.</p>
-                <a href="#contact" class="btn project-link-btn">Request Audit</a>
+                <div class="skill-category">
+                    <h3>Software & Systems Engineering</h3>
+                    <ul class="skill-list">
+                        <li>Semantic HTML5 & Native CSS3 Architecture</li>
+                        <li>Two-Dimensional Layouts (CSS Grid / Flexbox)</li>
+                        <li>Asynchronous JavaScript ES6+ Engines</li>
+                        <li>Version Control & Git Infrastructure</li>
+                    </ul>
+                </div>
             </div>
+        </section>
 
-        </div>
-    </section>
+        <!-- Secure Gateway Contact Form (Connected to Formspree) -->
+        <section id="contact" class="section">
+            <h2>Secure Gateway Portal</h2>
+            <p class="contact-subheading">Drop a secure message to initiate technical consultation or project collaboration.</p>
+            
+            <form id="contact-form" class="contact-form" action="https://formspree.io/f/mkoawrlg" method="POST">
+                <div class="form-group">
+                    <label for="name">Identification / Name:</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Return Route / Email Address:</label>
+                    <input type="email" id="email" name="email" required placeholder="your.email@domain.com">
+                </div>
+                <div class="form-group">
+                    <label for="message">Transmission Payload / Message:</label>
+                    <textarea id="message" name="message" rows="5" required placeholder="Type the project scope or inquiry details..."></textarea>
+                </div>
+                <button type="submit" class="btn">Transmit Message</button>
+            </form>
+        </section>
+    </main>
 
-    <section id="contact" class="section bg-alt">
-        <h2>Secure Gateway Portal</h2>
-        <p class="contact-subheading">Drop a secure message to initiate technical consultation or project collaboration.</p>
-        <form id="contact-form" class="contact-form">
-            <div class="form-group">
-                <label for="name">Identification / Name:</label>
-                <input type="text" id="name" required placeholder="Enter your full name">
-            </div>
-            <div class="form-group">
-                <label for="email">Return Route / Email Address:</label>
-                <input type="email" id="email" required placeholder="your.email@domain.com">
-            </div>
-            <div class="form-group">
-                <label for="message">Transmission Payload / Message:</label>
-                <textarea id="message" rows="5" required placeholder="Type the project scope or inquiry details..."></textarea>
-            </div>
-            <button type="submit" class="btn">Transmit Message</button>
-        </form>
-    </section>
-
-    <footer>
-        <p>&copy; 2026 Manna Driller. Engineered securely by Eugine Okero with native Web Technologies.</p>
+    <!-- System Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Eugine Okero. All rights reserved. Managed under token: Manna Driller.</p>
     </footer>
 
-    <script src="script.js"></script>
 </body>
 </html>
