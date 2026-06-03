@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eugine Okero | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">Manna Driller<span class="accent-dot">.</span></div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Core Skills</a></li>
+                <li><a href="#projects">Deployments</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <button id="theme-toggle" aria-label="Toggle dark/light mode">Toggle Mode</button>
+    </header>
+
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h1>Eugine Okero</h1>
+            <h2>Cybersecurity Specialist & Network Administrator</h2>
+            <p>Architecting secure enterprise networks, managing high-traffic local hotspot infrastructures, and executing defensive labs.</p>
+            <a href="#projects" class="btn">Explore Infrastructure</a>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <div class="about-container">
+            <p>I am a computer science and network professional specializing in end-to-end infrastructure deployment and security engineering. My background spans building resilient local networking environments, configuring carrier-grade hardware routing configurations, and conducting interactive threat modeling labs to build bulletproof network architecture.</p>
+        </div>
+    </section>
+
+    <section id="skills" class="section bg-alt">
+        <h2>Technical Stack</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3>Networking & Infrastructure</h3>
+                <p>MikroTik (WinBox), Huawei Enterprise, GPON Router Architecture, Captive Portals, & Power over Ethernet (PoE) Deployments.</p>
+            </div>
+            <div class="skill-card">
+                <h3>Cybersecurity Operations</h3>
+                <p>Advanced Penetration Testing, Nmap Network Scanning, Kali Linux Environment Diagnostics, & Threat Vector Analysis.</p>
+            </div>
+            <div class="skill-card">
+                <h3>Automation & Data Systems</h3>
+                <p>Infrastructure as Code (IaC), Automation Pipelines, Quantitative Financial Analysis Models, & Web Engineering (HTML5/CSS3/JS/PHP).</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <h2>Production Deployments</h2>
+        <div class="projects-grid">
+            
+            <div class="project-card">
+                <div class="project-tag">FinTech & Trading</div>
+                <div class="project-image-container">
+                    <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=600&q=80" alt="DrillerHub Trading Platform" class="project-img">
+                </div>
+                <h3>DrillerHub</h3>
+                <p>An advanced broker evaluation and live quantitative asset trading hub. Integrates real-time streaming charts and quantitative data indicators for automated market analysis.</p>
+                <a href="https://drillerhub.vercel.app" target="_blank" rel="noopener noreferrer" class="btn project-link-btn">Launch DrillerHub</a>
+            </div>
+
+            <div class="project-card">
+                <div class="project-tag">CyberSec & Dev</div>
+                <div class="project-image-container">
+                    <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=600&q=80" alt="Manna Driller Launchpad Platform" class="project-img">
+                </div>
+                <h3>Manna Driller Launchpad</h3>
+                <p>An interactive, multi-tier learning platform built for foundational cybersecurity frameworks and responsive web development training pathways.</p>
+                <a href="https://manna-driller-launchpad.vercel.app" target="_blank" rel="noopener noreferrer" class="btn project-link-btn">Explore Launchpad</a>
+            </div>
+
+            <div class="project-card">
+                <div class="project-tag">Networking</div>
+                <div class="project-image-container">
+                    <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=600&q=80" alt="Hotspot Network Infrastructure" class="project-img">
+                </div>
+                <h3>Enterprise Hotspot Architecture</h3>
+                <p>Engineered dynamic traffic management routing scripts using MikroTik WinBox and custom gateway portals to service high-density local hotspot infrastructure zones.</p>
+                <a href="#contact" class="btn project-link-btn">Request Audit</a>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact" class="section bg-alt">
+        <h2>Secure Gateway Portal</h2>
+        <p class="contact-subheading">Drop a secure message to initiate technical consultation or project collaboration.</p>
+        <form id="contact-form" class="contact-form">
+            <div class="form-group">
+                <label for="name">Identification / Name:</label>
+                <input type="text" id="name" required placeholder="Enter your full name">
+            </div>
+            <div class="form-group">
+                <label for="email">Return Route / Email Address:</label>
+                <input type="email" id="email" required placeholder="your.email@domain.com">
+            </div>
+            <div class="form-group">
+                <label for="message">Transmission Payload / Message:</label>
+                <textarea id="message" rows="5" required placeholder="Type the project scope or inquiry details..."></textarea>
+            </div>
+            <button type="submit" class="btn">Transmit Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Manna Driller. Engineered securely by Eugine Okero with native Web Technologies.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
