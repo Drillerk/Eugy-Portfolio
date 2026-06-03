@@ -3,7 +3,7 @@
 Welcome to the central deployment repository for my professional portfolio. This platform showcases production implementations, advanced defensive networking infrastructure layout engines, and quantitative asset tracking hubs under my professional identity, **Manna Driller**.
 
 ## 🌐 Live Production Deployments
-* **Live Portfolio Showcase:** `[Insert your main Vercel link here once live]`
+* **Live Portfolio Showcase:** `[https://eugy-portfolio.vercel.app]`(https://eugy-portfolio.vercel.app)
 * **DrillerHub Engine:** [https://drillerhub.vercel.app](https://drillerhub.vercel.app)
 * **Manna Driller Launchpad:** [https://manna-driller-launchpad.vercel.app](https://manna-driller-launchpad.vercel.app)
 
